@@ -1,52 +1,26 @@
-# Prerequisites
-*.d
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,ansible
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,ansible
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+### Ansible ###
+*.retry
 
-# Linker output
-*.ilk
-*.map
-*.exp
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Precompiled Headers
-*.gch
-*.pch
+# Local History for Visual Studio Code
+.history/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Built Visual Studio Code Extensions
+*.vsix
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,ansible
