@@ -1,0 +1,4 @@
+wireguard_local_privatekey:  
+wireguard_local_dns: 
+wireguard_local_allowed_ips: 
+wireguard_local_conf_file_dest: 

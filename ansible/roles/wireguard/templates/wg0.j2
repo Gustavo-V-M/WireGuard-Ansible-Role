@@ -1,0 +1,11 @@
+[Interface]
+Address = {{ wireguard_server_vpn_address }}
+PrivateKey = {{ wireguard_server_privatekey.stdout }}
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+SaveConfig = true
+
+[Peer]
+AllowedIPs = {{ wireguard_local_ip }}
+PublicKey = {{ wireguard_local_pubkey }}

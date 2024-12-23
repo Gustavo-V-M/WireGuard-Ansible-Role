@@ -1,0 +1,6 @@
+wireguard:
+  hosts: 
+
+local:
+  hosts: localhost
+  ansible_connection: local
